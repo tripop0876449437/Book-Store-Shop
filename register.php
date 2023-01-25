@@ -30,7 +30,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/bk-theme.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="CSS/navbar.css">
   <link rel="stylesheet" href="CSS/register.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>register</title>
@@ -56,26 +57,53 @@
     }
   ?>
 
+  <!-- Header Register Section -->
+  <?php include 'section/header.php'; ?>
+
   <!-- Register Section -->
   <section class="register">
     <div class="container">
+      <h3 class="head-register">ลงทะเบียนเข้าระบบ</h3>
       <form action="" method="post">
-        <h3>ลงทะเบียนผู้ใช้งาน</h3>
-        <input type="text" name="name" placeholder="ใส่ชื่อของคุณ!" class="box" required>
-        <input type="email" name="email" placeholder="ใส่อีเมลของคุณ!" class="box" required>
-        <input type="password" name="password" placeholder="ตั้งรหัสผ่านของคุณ!" class="box" required>
-        <input type="password" name="cpassword" placeholder="ยืนยันรหัสผ่านของคุณ!" class="box" required>
-        <select name="user_type" class="box">
-          <option value="user">ผู้ใช้</option>
-          <option value="admin">แอดมิน</option>
-        </select>
-        <input type="submit" name="submit" value="ลงทะเบียน" class="btn">
-        <p>ผู้ใช้งานเคยลงทะเบียนแล้ว <a href="login.php">ลงชื่อเข้าสู่ระบบ</a> </p>
+        <div class="box1">
+          <div class="value1">
+            <h3>ชื่อของคุณ</h3>          
+            <input type="text" name="name" placeholder="ใส่ชื่อของคุณ!" class="box" required>
+          </div>
+          <div class="value2">
+            <h3>ประเภทของคุณ</h3> 
+            <select name="user_type" class="box">
+              <option value="user">ผู้ใช้</option>
+              <option value="admin">แอดมิน</option>
+            </select>  
+          </div>
+        </div>
+        <div class="box2">
+          <h3>อีเมลของคุณ</h3>
+          <input type="email" name="email" placeholder="ใส่อีเมลของคุณ!" class="box" required> 
+        </div>
+        <div class="box3">
+          <div class="value1">
+            <h3>รหัสผ่านของคุณ</h3>
+            <input type="password" name="password" placeholder="ตั้งรหัสผ่านของคุณ!" class="box" required>            
+          </div>
+          <div class="value2">
+            <h3>ยืนยันรหัสผ่านของคุณ</h3>
+            <input type="password" name="cpassword" placeholder="ยืนยันรหัสผ่านของคุณ!" class="box" required>
+          </div>
+        </div>
+        <div class="box4">
+          <input type="submit" name="submit" value="ลงทะเบียน" class="btn">
+        </div>
+        <div class="box5">
+          <h3>ผู้ใช้งานเคยลงทะเบียนแล้ว <a href="login.php">ลงชื่อเข้าสู่ระบบ</a> </h3>
+        </div>
       </form>
     </div>
   </section>
 
-
+  <!-- Footer Register Section -->
+  <?php include 'section/footer.php'; ?>
 
 </body>
 </html>

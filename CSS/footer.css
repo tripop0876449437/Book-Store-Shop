@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;500;600&display=swap');
+
+:root{
+   --red:#CF1259;
+   --pink: #DD7596;
+   --black:#4F6272;
+   --dark: #404E5C;
+   --blue: #B7C3F3;
+   --white:#fff;
+   --light-color:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'FreesiaUPC';
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition:all .2s linear;
+}
+
+*::selection{
+   background-color: var(--pink);
+   color:var(--white);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--pink);
+}
+
+
+/* Footer text */
+.footer{
+  width: 100%;
+  height: 200px;
+  background-color: var(--pink);
+  position: relative;
+}
+.footer .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 190px;
+  height: 100%;
+}
+.footer .container .box{
+  padding: 0 42px;
+  background-color: #fff5f8;
+  text-align: center;
+  margin: 0 5px;
+}
+.footer .container .box h3{
+  font-size: 40px;
+}
+.footer .container .box .context{
+  display: flex;
+}
+.footer .container .box .context .value{
+  text-align: left;
+  margin-left: 10px;
+}
+.footer .container .box .context .value p:nth-child(1){
+  font-size: 40px;
+  color: #8765FA;
+}
+.footer .container .box .context .value p:nth-child(1) span{
+  color: var(--light-color);
+}
+.footer .container .box .context .value p:nth-child(2){
+  font-size: 40px;
+  color: #09c952;
+}
+.footer .container .box .context .value p:nth-child(2) span{
+  color: var(--light-color);
+}

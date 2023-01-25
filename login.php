@@ -35,7 +35,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/bk-theme.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="CSS/navbar.css">
   <link rel="stylesheet" href="CSS/login.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>ลงชื่อเข้าสู่ระบบ</title>
@@ -58,17 +59,26 @@
     }
   ?>
 
-  <!-- Login Section -->
+  <!-- Header Login Section -->
+  <?php include 'section/header.php'; ?>
+
+  <!--Body Login Section -->
   <section class="login">
     <div class="container">
+      <h3 class="head-login">ล็อคอินเข้าระบบ</h3>
       <form action="" method="post">
-        <h3>ลงชื่อเข้าสู่ระบบ</h3>
+        <h3>อีเมลของคุณ</h3>
         <input type="text" name="email" placeholder="ใส่อีเมลของคุณ!" class="box" required>
+        <h3>รหัสผ่านของคุณ</h3>
         <input type="password" name="password" placeholder="ใส่รหัสผ่านของคุณ!" class="box" required>
         <input type="submit" name="submit" value="เข้าสู่ระบบ" class="btn">
-        <p>ผู้ใช้งานยังไม่เคยลงทะเบียน <a href="register.php">ลงทะเบียนผู้ใช้งาน</a> </p>
+        <h3>ผู้ใช้งานยังไม่เคยลงทะเบียน <a href="register.php">ลงทะเบียนผู้ใช้งาน</a> </h3>
       </form>
     </div>
   </section>
+
+  <!-- Footer Login Section -->
+  <?php include 'section/footer.php'; ?>
+
 </body>
 </html>
